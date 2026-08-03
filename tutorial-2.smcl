@@ -1,0 +1,650 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\s4945697\Documents\tutorial-2.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 4 Aug 2026, 08:02:00
+
+{com}. describe
+
+{txt}Contains data from {res}C:\Users\s4945697\Downloads\wage2.dta
+{txt} Observations:{res}           935                  
+{txt}    Variables:{res}            17                  30 Jul 2017 21:45
+{txt}{hline}
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+{hline}
+{p 0 48}{res}{bind:wage           }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:hours          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:IQ             }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:KWW            }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:educ           }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:exper          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:tenure         }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:age            }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:married        }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:black          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:south          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:urban          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:sibs           }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:brthord        }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:meduc          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:feduc          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:lwage          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{txt}{hline}
+Sorted by: 
+
+{com}. summarize
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}wage {c |}{res}        935    957.9455    404.3608        115       3078
+{txt}{space 7}hours {c |}{res}        935    43.92941    7.224256         20         80
+{txt}{space 10}IQ {c |}{res}        935    101.2824    15.05264         50        145
+{txt}{space 9}KWW {c |}{res}        935    35.74439    7.638788         12         56
+{txt}{space 8}educ {c |}{res}        935    13.46845    2.196654          9         18
+{txt}{hline 13}{c +}{hline 57}
+{space 7}exper {c |}{res}        935    11.56364    4.374586          1         23
+{txt}{space 6}tenure {c |}{res}        935    7.234225    5.075206          0         22
+{txt}{space 9}age {c |}{res}        935    33.08021    3.107803         28         38
+{txt}{space 5}married {c |}{res}        935    .8930481    .3092174          0          1
+{txt}{space 7}black {c |}{res}        935    .1283422    .3346495          0          1
+{txt}{hline 13}{c +}{hline 57}
+{space 7}south {c |}{res}        935    .3411765    .4743582          0          1
+{txt}{space 7}urban {c |}{res}        935    .7176471    .4503851          0          1
+{txt}{space 8}sibs {c |}{res}        935    2.941176    2.306254          0         14
+{txt}{space 5}brthord {c |}{res}        852    2.276995    1.595613          1         10
+{txt}{space 7}meduc {c |}{res}        857    10.68261    2.849756          0         18
+{txt}{hline 13}{c +}{hline 57}
+{space 7}feduc {c |}{res}        741    10.21727      3.3007          0         18
+{txt}{space 7}lwage {c |}{res}        935    6.779004    .4211439   4.744932   8.032035
+
+{com}. summarize
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}wage {c |}{res}        935    957.9455    404.3608        115       3078
+{txt}{space 7}hours {c |}{res}        935    43.92941    7.224256         20         80
+{txt}{space 10}IQ {c |}{res}        935    101.2824    15.05264         50        145
+{txt}{space 9}KWW {c |}{res}        935    35.74439    7.638788         12         56
+{txt}{space 8}educ {c |}{res}        935    13.46845    2.196654          9         18
+{txt}{hline 13}{c +}{hline 57}
+{space 7}exper {c |}{res}        935    11.56364    4.374586          1         23
+{txt}{space 6}tenure {c |}{res}        935    7.234225    5.075206          0         22
+{txt}{space 9}age {c |}{res}        935    33.08021    3.107803         28         38
+{txt}{space 5}married {c |}{res}        935    .8930481    .3092174          0          1
+{txt}{space 7}black {c |}{res}        935    .1283422    .3346495          0          1
+{txt}{hline 13}{c +}{hline 57}
+{space 7}south {c |}{res}        935    .3411765    .4743582          0          1
+{txt}{space 7}urban {c |}{res}        935    .7176471    .4503851          0          1
+{txt}{space 8}sibs {c |}{res}        935    2.941176    2.306254          0         14
+{txt}{space 5}brthord {c |}{res}        852    2.276995    1.595613          1         10
+{txt}{space 7}meduc {c |}{res}        857    10.68261    2.849756          0         18
+{txt}{hline 13}{c +}{hline 57}
+{space 7}feduc {c |}{res}        741    10.21727      3.3007          0         18
+{txt}{space 7}lwage {c |}{res}        935    6.779004    .4211439   4.744932   8.032035
+
+{com}. summarize
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}wage {c |}{res}        935    957.9455    404.3608        115       3078
+{txt}{space 7}hours {c |}{res}        935    43.92941    7.224256         20         80
+{txt}{space 10}IQ {c |}{res}        935    101.2824    15.05264         50        145
+{txt}{space 9}KWW {c |}{res}        935    35.74439    7.638788         12         56
+{txt}{space 8}educ {c |}{res}        935    13.46845    2.196654          9         18
+{txt}{hline 13}{c +}{hline 57}
+{space 7}exper {c |}{res}        935    11.56364    4.374586          1         23
+{txt}{space 6}tenure {c |}{res}        935    7.234225    5.075206          0         22
+{txt}{space 9}age {c |}{res}        935    33.08021    3.107803         28         38
+{txt}{space 5}married {c |}{res}        935    .8930481    .3092174          0          1
+{txt}{space 7}black {c |}{res}        935    .1283422    .3346495          0          1
+{txt}{hline 13}{c +}{hline 57}
+{space 7}south {c |}{res}        935    .3411765    .4743582          0          1
+{txt}{space 7}urban {c |}{res}        935    .7176471    .4503851          0          1
+{txt}{space 8}sibs {c |}{res}        935    2.941176    2.306254          0         14
+{txt}{space 5}brthord {c |}{res}        852    2.276995    1.595613          1         10
+{txt}{space 7}meduc {c |}{res}        857    10.68261    2.849756          0         18
+{txt}{hline 13}{c +}{hline 57}
+{space 7}feduc {c |}{res}        741    10.21727      3.3007          0         18
+{txt}{space 7}lwage {c |}{res}        935    6.779004    .4211439   4.744932   8.032035
+
+{com}. summarizesummarise
+{err}command {bf}summarizesummarise{sf} is unrecognized
+{txt}{search r(199), local:r(199);}
+
+{com}. sum
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}wage {c |}{res}        935    957.9455    404.3608        115       3078
+{txt}{space 7}hours {c |}{res}        935    43.92941    7.224256         20         80
+{txt}{space 10}IQ {c |}{res}        935    101.2824    15.05264         50        145
+{txt}{space 9}KWW {c |}{res}        935    35.74439    7.638788         12         56
+{txt}{space 8}educ {c |}{res}        935    13.46845    2.196654          9         18
+{txt}{hline 13}{c +}{hline 57}
+{space 7}exper {c |}{res}        935    11.56364    4.374586          1         23
+{txt}{space 6}tenure {c |}{res}        935    7.234225    5.075206          0         22
+{txt}{space 9}age {c |}{res}        935    33.08021    3.107803         28         38
+{txt}{space 5}married {c |}{res}        935    .8930481    .3092174          0          1
+{txt}{space 7}black {c |}{res}        935    .1283422    .3346495          0          1
+{txt}{hline 13}{c +}{hline 57}
+{space 7}south {c |}{res}        935    .3411765    .4743582          0          1
+{txt}{space 7}urban {c |}{res}        935    .7176471    .4503851          0          1
+{txt}{space 8}sibs {c |}{res}        935    2.941176    2.306254          0         14
+{txt}{space 5}brthord {c |}{res}        852    2.276995    1.595613          1         10
+{txt}{space 7}meduc {c |}{res}        857    10.68261    2.849756          0         18
+{txt}{hline 13}{c +}{hline 57}
+{space 7}feduc {c |}{res}        741    10.21727      3.3007          0         18
+{txt}{space 7}lwage {c |}{res}        935    6.779004    .4211439   4.744932   8.032035
+
+{com}. regress
+{err}last estimates not found
+{txt}{search r(301), local:r(301);}
+
+{com}. reg
+{err}last estimates not found
+{txt}{search r(301), local:r(301);}
+
+{com}. sum wage IQ
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}wage {c |}{res}        935    957.9455    404.3608        115       3078
+{txt}{space 10}IQ {c |}{res}        935    101.2824    15.05264         50        145
+
+{com}. reg
+{err}last estimates not found
+{txt}{search r(301), local:r(301);}
+
+{com}. help regress
+
+. regress wage IQ
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(1, 933)       = {res}    98.55
+{txt}       Model {c |} {res} 14589782.6         1  14589782.6   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res}  138126386       933  148045.429   {txt}R-squared       ={res}    0.0955
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0946
+{txt}       Total {c |} {res}  152716168       934  163507.675   {txt}Root MSE        =   {res} 384.77
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}        wage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}IQ {c |}{col 14}{res}{space 2} 8.303064{col 26}{space 2} .8363951{col 37}{space 1}    9.93{col 46}{space 3}0.000{col 54}{space 4} 6.661631{col 67}{space 3} 9.944498
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 116.9916{col 26}{space 2} 85.64153{col 37}{space 1}    1.37{col 46}{space 3}0.172{col 54}{space 4}-51.08078{col 67}{space 3} 285.0639
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress wage IQ
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(1, 933)       = {res}    98.55
+{txt}       Model {c |} {res} 14589782.6         1  14589782.6   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res}  138126386       933  148045.429   {txt}R-squared       ={res}    0.0955
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0946
+{txt}       Total {c |} {res}  152716168       934  163507.675   {txt}Root MSE        =   {res} 384.77
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}        wage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}IQ {c |}{col 14}{res}{space 2} 8.303064{col 26}{space 2} .8363951{col 37}{space 1}    9.93{col 46}{space 3}0.000{col 54}{space 4} 6.661631{col 67}{space 3} 9.944498
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 116.9916{col 26}{space 2} 85.64153{col 37}{space 1}    1.37{col 46}{space 3}0.172{col 54}{space 4}-51.08078{col 67}{space 3} 285.0639
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. help regress
+
+. regress log(wage) IQ
+{err}variable {bf}log{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. regress l(wage) IQ
+{err}time variable not set
+{txt}{search r(111), local:r(111);}
+
+{com}. regress lwage IQ
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(1, 933)       = {res}   102.62
+{txt}       Model {c |} {res} 16.4150981         1  16.4150981   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 149.241196       933   .15995841   {txt}R-squared       ={res}    0.0991
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0981
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .39995
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}IQ {c |}{col 14}{res}{space 2} .0088072{col 26}{space 2} .0008694{col 37}{space 1}   10.13{col 46}{space 3}0.000{col 54}{space 4}  .007101{col 67}{space 3} .0105134
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.886994{col 26}{space 2} .0890206{col 37}{space 1}   66.13{col 46}{space 3}0.000{col 54}{space 4}  5.71229{col 67}{space 3} 6.061698
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. label variable lwage
+
+. describe
+
+{txt}Contains data from {res}C:\Users\s4945697\Downloads\wage2.dta
+{txt} Observations:{res}           935                  
+{txt}    Variables:{res}            17                  30 Jul 2017 21:45
+{txt}{hline}
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+{hline}
+{p 0 48}{res}{bind:wage           }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:hours          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:IQ             }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:KWW            }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:educ           }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:exper          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:tenure         }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:age            }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:married        }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:black          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:south          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:urban          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:sibs           }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:brthord        }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:meduc          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:feduc          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:lwage          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{txt}{hline}
+Sorted by: 
+
+{com}. clear
+
+. use "C:\Users\s4945697\Downloads\wage2.dta"
+
+. describe
+
+{txt}Contains data from {res}C:\Users\s4945697\Downloads\wage2.dta
+{txt} Observations:{res}           935                  
+{txt}    Variables:{res}            17                  30 Jul 2017 21:45
+{txt}{hline}
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+{hline}
+{p 0 48}{res}{bind:wage           }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:hours          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:IQ             }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:KWW            }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:educ           }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:exper          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:tenure         }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:age            }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:married        }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:black          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:south          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:urban          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:sibs           }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:brthord        }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:meduc          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:feduc          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{p 0 48}{bind:lwage          }{txt}{bind: float   }{bind:%9.0g     }{space 1}{bind:         }{bind:  }{res}{res}{p_end}
+{txt}{hline}
+Sorted by: 
+
+{com}. sum
+
+{txt}    Variable {c |}        Obs        Mean    Std. dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}wage {c |}{res}        935    957.9455    404.3608        115       3078
+{txt}{space 7}hours {c |}{res}        935    43.92941    7.224256         20         80
+{txt}{space 10}IQ {c |}{res}        935    101.2824    15.05264         50        145
+{txt}{space 9}KWW {c |}{res}        935    35.74439    7.638788         12         56
+{txt}{space 8}educ {c |}{res}        935    13.46845    2.196654          9         18
+{txt}{hline 13}{c +}{hline 57}
+{space 7}exper {c |}{res}        935    11.56364    4.374586          1         23
+{txt}{space 6}tenure {c |}{res}        935    7.234225    5.075206          0         22
+{txt}{space 9}age {c |}{res}        935    33.08021    3.107803         28         38
+{txt}{space 5}married {c |}{res}        935    .8930481    .3092174          0          1
+{txt}{space 7}black {c |}{res}        935    .1283422    .3346495          0          1
+{txt}{hline 13}{c +}{hline 57}
+{space 7}south {c |}{res}        935    .3411765    .4743582          0          1
+{txt}{space 7}urban {c |}{res}        935    .7176471    .4503851          0          1
+{txt}{space 8}sibs {c |}{res}        935    2.941176    2.306254          0         14
+{txt}{space 5}brthord {c |}{res}        852    2.276995    1.595613          1         10
+{txt}{space 7}meduc {c |}{res}        857    10.68261    2.849756          0         18
+{txt}{hline 13}{c +}{hline 57}
+{space 7}feduc {c |}{res}        741    10.21727      3.3007          0         18
+{txt}{space 7}lwage {c |}{res}        935    6.779004    .4211439   4.744932   8.032035
+
+{com}. reg
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(1, 933)       = {res}   102.62
+{txt}       Model {c |} {res} 16.4150981         1  16.4150981   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 149.241196       933   .15995841   {txt}R-squared       ={res}    0.0991
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0981
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .39995
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}IQ {c |}{col 14}{res}{space 2} .0088072{col 26}{space 2} .0008694{col 37}{space 1}   10.13{col 46}{space 3}0.000{col 54}{space 4}  .007101{col 67}{space 3} .0105134
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.886994{col 26}{space 2} .0890206{col 37}{space 1}   66.13{col 46}{space 3}0.000{col 54}{space 4}  5.71229{col 67}{space 3} 6.061698
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. help label variable
+
+. label variable lwage ["lwage']
+{err}invalid syntax
+{txt}{search r(198), local:r(198);}
+
+{com}. label variable lwage
+
+. regress lwage IQ
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(1, 933)       = {res}   102.62
+{txt}       Model {c |} {res} 16.4150981         1  16.4150981   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 149.241196       933   .15995841   {txt}R-squared       ={res}    0.0991
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0981
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .39995
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}IQ {c |}{col 14}{res}{space 2} .0088072{col 26}{space 2} .0008694{col 37}{space 1}   10.13{col 46}{space 3}0.000{col 54}{space 4}  .007101{col 67}{space 3} .0105134
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.886994{col 26}{space 2} .0890206{col 37}{space 1}   66.13{col 46}{space 3}0.000{col 54}{space 4}  5.71229{col 67}{space 3} 6.061698
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress lwage educ
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(1, 933)       = {res}   100.70
+{txt}       Model {c |} {res} 16.1377074         1  16.1377074   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 149.518587       933   .16025572   {txt}R-squared       ={res}    0.0974
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0964
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .40032
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} .0598392{col 26}{space 2} .0059631{col 37}{space 1}   10.03{col 46}{space 3}0.000{col 54}{space 4} .0481366{col 67}{space 3} .0715418
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.973062{col 26}{space 2} .0813737{col 37}{space 1}   73.40{col 46}{space 3}0.000{col 54}{space 4} 5.813366{col 67}{space 3} 6.132759
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress lwage educ IQ
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(2, 932)       = {res}    69.42
+{txt}       Model {c |} {res} 21.4779495         2  10.7389748   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 144.178345       932  .154697795   {txt}R-squared       ={res}    0.1297
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.1278
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .39332
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} .0391199{col 26}{space 2} .0068382{col 37}{space 1}    5.72{col 46}{space 3}0.000{col 54}{space 4} .0256998{col 67}{space 3}   .05254
+{txt}{space 10}IQ {c |}{col 14}{res}{space 2} .0058631{col 26}{space 2} .0009979{col 37}{space 1}    5.88{col 46}{space 3}0.000{col 54}{space 4} .0039047{col 67}{space 3} .0078215
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.658288{col 26}{space 2} .0962408{col 37}{space 1}   58.79{col 46}{space 3}0.000{col 54}{space 4} 5.469414{col 67}{space 3} 5.847161
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress educ IQ
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(1, 933)       = {res}   338.02
+{txt}       Model {c |} {res} 1198.55887         1  1198.55887   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3308.26038       933  3.54583106   {txt}R-squared       ={res}    0.2659
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2652
+{txt}       Total {c |} {res} 4506.81925       934  4.82528828   {txt}Root MSE        =   {res}  1.883
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}        educ{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}IQ {c |}{col 14}{res}{space 2} .0752564{col 26}{space 2} .0040933{col 37}{space 1}   18.39{col 46}{space 3}0.000{col 54}{space 4} .0672233{col 67}{space 3} .0832896
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}   5.8463{col 26}{space 2} .4191273{col 37}{space 1}   13.95{col 46}{space 3}0.000{col 54}{space 4} 5.023758{col 67}{space 3} 6.668841
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. display 15* .0088072
+{res}.132108
+
+{com}. regress lwage IQ
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(1, 933)       = {res}   102.62
+{txt}       Model {c |} {res} 16.4150981         1  16.4150981   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 149.241196       933   .15995841   {txt}R-squared       ={res}    0.0991
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0981
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .39995
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}IQ {c |}{col 14}{res}{space 2} .0088072{col 26}{space 2} .0008694{col 37}{space 1}   10.13{col 46}{space 3}0.000{col 54}{space 4}  .007101{col 67}{space 3} .0105134
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.886994{col 26}{space 2} .0890206{col 37}{space 1}   66.13{col 46}{space 3}0.000{col 54}{space 4}  5.71229{col 67}{space 3} 6.061698
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress lwage IQ
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(1, 933)       = {res}   102.62
+{txt}       Model {c |} {res} 16.4150981         1  16.4150981   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 149.241196       933   .15995841   {txt}R-squared       ={res}    0.0991
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0981
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .39995
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}IQ {c |}{col 14}{res}{space 2} .0088072{col 26}{space 2} .0008694{col 37}{space 1}   10.13{col 46}{space 3}0.000{col 54}{space 4}  .007101{col 67}{space 3} .0105134
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.886994{col 26}{space 2} .0890206{col 37}{space 1}   66.13{col 46}{space 3}0.000{col 54}{space 4}  5.71229{col 67}{space 3} 6.061698
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress lwage educ
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(1, 933)       = {res}   100.70
+{txt}       Model {c |} {res} 16.1377074         1  16.1377074   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 149.518587       933   .16025572   {txt}R-squared       ={res}    0.0974
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0964
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .40032
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} .0598392{col 26}{space 2} .0059631{col 37}{space 1}   10.03{col 46}{space 3}0.000{col 54}{space 4} .0481366{col 67}{space 3} .0715418
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.973062{col 26}{space 2} .0813737{col 37}{space 1}   73.40{col 46}{space 3}0.000{col 54}{space 4} 5.813366{col 67}{space 3} 6.132759
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress lwage educ IQ
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(2, 932)       = {res}    69.42
+{txt}       Model {c |} {res} 21.4779495         2  10.7389748   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 144.178345       932  .154697795   {txt}R-squared       ={res}    0.1297
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.1278
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .39332
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} .0391199{col 26}{space 2} .0068382{col 37}{space 1}    5.72{col 46}{space 3}0.000{col 54}{space 4} .0256998{col 67}{space 3}   .05254
+{txt}{space 10}IQ {c |}{col 14}{res}{space 2} .0058631{col 26}{space 2} .0009979{col 37}{space 1}    5.88{col 46}{space 3}0.000{col 54}{space 4} .0039047{col 67}{space 3} .0078215
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.658288{col 26}{space 2} .0962408{col 37}{space 1}   58.79{col 46}{space 3}0.000{col 54}{space 4} 5.469414{col 67}{space 3} 5.847161
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress IQ educ
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(1, 933)       = {res}   338.02
+{txt}       Model {c |} {res} 56280.9277         1  56280.9277   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 155346.531       933  166.502177   {txt}R-squared       ={res}    0.2659
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2652
+{txt}       Total {c |} {res} 211627.459       934  226.581862   {txt}Root MSE        =   {res} 12.904
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}          IQ{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} 3.533829{col 26}{space 2} .1922095{col 37}{space 1}   18.39{col 46}{space 3}0.000{col 54}{space 4} 3.156616{col 67}{space 3} 3.911042
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 53.68715{col 26}{space 2} 2.622933{col 37}{space 1}   20.47{col 46}{space 3}0.000{col 54}{space 4} 48.53962{col 67}{space 3} 58.83469
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress lwage educ experience tenure
+{err}variable {bf}experience{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. regress lwage educ exper tenure
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(3, 931)       = {res}    56.97
+{txt}       Model {c |} {res} 25.6953278         3  8.56510927   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 139.960966       931  .150334013   {txt}R-squared       ={res}    0.1551
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.1524
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .38773
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} .0748638{col 26}{space 2} .0065124{col 37}{space 1}   11.50{col 46}{space 3}0.000{col 54}{space 4}  .062083{col 67}{space 3} .0876446
+{txt}{space 7}exper {c |}{col 14}{res}{space 2} .0153285{col 26}{space 2} .0033696{col 37}{space 1}    4.55{col 46}{space 3}0.000{col 54}{space 4} .0087156{col 67}{space 3} .0219413
+{txt}{space 6}tenure {c |}{col 14}{res}{space 2} .0133748{col 26}{space 2} .0025872{col 37}{space 1}    5.17{col 46}{space 3}0.000{col 54}{space 4} .0082974{col 67}{space 3} .0184522
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.496696{col 26}{space 2} .1105282{col 37}{space 1}   49.73{col 46}{space 3}0.000{col 54}{space 4} 5.279782{col 67}{space 3} 5.713609
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress lwage educ exper tenure
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(3, 931)       = {res}    56.97
+{txt}       Model {c |} {res} 25.6953278         3  8.56510927   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 139.960966       931  .150334013   {txt}R-squared       ={res}    0.1551
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.1524
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .38773
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} .0748638{col 26}{space 2} .0065124{col 37}{space 1}   11.50{col 46}{space 3}0.000{col 54}{space 4}  .062083{col 67}{space 3} .0876446
+{txt}{space 7}exper {c |}{col 14}{res}{space 2} .0153285{col 26}{space 2} .0033696{col 37}{space 1}    4.55{col 46}{space 3}0.000{col 54}{space 4} .0087156{col 67}{space 3} .0219413
+{txt}{space 6}tenure {c |}{col 14}{res}{space 2} .0133748{col 26}{space 2} .0025872{col 37}{space 1}    5.17{col 46}{space 3}0.000{col 54}{space 4} .0082974{col 67}{space 3} .0184522
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.496696{col 26}{space 2} .1105282{col 37}{space 1}   49.73{col 46}{space 3}0.000{col 54}{space 4} 5.279782{col 67}{space 3} 5.713609
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. test exper = tenure
+
+{p 0 7}{space 1}{text:( 1)}{space 1} {res}exper - tenure = 0{p_end}
+
+{txt}       F(  1,   931) ={res}    0.17
+{txt}{col 13}Prob > F ={res}    0.6805
+
+{com}. regress lwage educ exper tenure
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(3, 931)       = {res}    56.97
+{txt}       Model {c |} {res} 25.6953278         3  8.56510927   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 139.960966       931  .150334013   {txt}R-squared       ={res}    0.1551
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.1524
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .38773
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} .0748638{col 26}{space 2} .0065124{col 37}{space 1}   11.50{col 46}{space 3}0.000{col 54}{space 4}  .062083{col 67}{space 3} .0876446
+{txt}{space 7}exper {c |}{col 14}{res}{space 2} .0153285{col 26}{space 2} .0033696{col 37}{space 1}    4.55{col 46}{space 3}0.000{col 54}{space 4} .0087156{col 67}{space 3} .0219413
+{txt}{space 6}tenure {c |}{col 14}{res}{space 2} .0133748{col 26}{space 2} .0025872{col 37}{space 1}    5.17{col 46}{space 3}0.000{col 54}{space 4} .0082974{col 67}{space 3} .0184522
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.496696{col 26}{space 2} .1105282{col 37}{space 1}   49.73{col 46}{space 3}0.000{col 54}{space 4} 5.279782{col 67}{space 3} 5.713609
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress lwage educ exper tenure
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(3, 931)       = {res}    56.97
+{txt}       Model {c |} {res} 25.6953278         3  8.56510927   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 139.960966       931  .150334013   {txt}R-squared       ={res}    0.1551
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.1524
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .38773
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} .0748638{col 26}{space 2} .0065124{col 37}{space 1}   11.50{col 46}{space 3}0.000{col 54}{space 4}  .062083{col 67}{space 3} .0876446
+{txt}{space 7}exper {c |}{col 14}{res}{space 2} .0153285{col 26}{space 2} .0033696{col 37}{space 1}    4.55{col 46}{space 3}0.000{col 54}{space 4} .0087156{col 67}{space 3} .0219413
+{txt}{space 6}tenure {c |}{col 14}{res}{space 2} .0133748{col 26}{space 2} .0025872{col 37}{space 1}    5.17{col 46}{space 3}0.000{col 54}{space 4} .0082974{col 67}{space 3} .0184522
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 5.496696{col 26}{space 2} .1105282{col 37}{space 1}   49.73{col 46}{space 3}0.000{col 54}{space 4} 5.279782{col 67}{space 3} 5.713609
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress lwage educ exper c.educ##c.exper
+{txt}{p 0 6 2}note: {bf:educ} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:exper} omitted because of collinearity.{p_end}
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(3, 931)       = {res}    48.41
+{txt}       Model {c |} {res} 22.3529774         3  7.45099246   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 143.303317       931  .153924078   {txt}R-squared       ={res}    0.1349
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.1321
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .39233
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} .0440498{col 26}{space 2} .0173911{col 37}{space 1}    2.53{col 46}{space 3}0.011{col 54}{space 4} .0099195{col 67}{space 3} .0781801
+{txt}{space 7}exper {c |}{col 14}{res}{space 2}-.0214959{col 26}{space 2} .0199783{col 37}{space 1}   -1.08{col 46}{space 3}0.282{col 54}{space 4}-.0607036{col 67}{space 3} .0177118
+{txt}{space 8}educ {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 7}exper {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 12} {c |}
+{space 6}c.educ#{c |}
+{space 5}c.exper {c |}{col 14}{res}{space 2}  .003203{col 26}{space 2} .0015292{col 37}{space 1}    2.09{col 46}{space 3}0.036{col 54}{space 4}  .000202{col 67}{space 3}  .006204
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2} 5.949455{col 26}{space 2} .2408264{col 37}{space 1}   24.70{col 46}{space 3}0.000{col 54}{space 4} 5.476829{col 67}{space 3}  6.42208
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress lwage educ exper c.educ##c.exper
+{txt}{p 0 6 2}note: {bf:educ} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:exper} omitted because of collinearity.{p_end}
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(3, 931)       = {res}    48.41
+{txt}       Model {c |} {res} 22.3529774         3  7.45099246   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 143.303317       931  .153924078   {txt}R-squared       ={res}    0.1349
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.1321
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .39233
+
+{txt}{hline 15}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         lwage{col 16}{c |} Coefficient{col 28}  Std. err.{col 40}      t{col 48}   P>|t|{col 56}     [95% con{col 69}f. interval]
+{hline 15}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}educ {c |}{col 16}{res}{space 2} .0440498{col 28}{space 2} .0173911{col 39}{space 1}    2.53{col 48}{space 3}0.011{col 56}{space 4} .0099195{col 69}{space 3} .0781801
+{txt}{space 9}exper {c |}{col 16}{res}{space 2}-.0214959{col 28}{space 2} .0199783{col 39}{space 1}   -1.08{col 48}{space 3}0.282{col 56}{space 4}-.0607036{col 69}{space 3} .0177118
+{txt}{space 10}educ {c |}{col 16}{res}{space 2}        0{col 28}{txt}  (omitted)
+{space 9}exper {c |}{col 16}{res}{space 2}        0{col 28}{txt}  (omitted)
+{space 14} {c |}
+c.educ#c.exper {c |}{col 16}{res}{space 2}  .003203{col 28}{space 2} .0015292{col 39}{space 1}    2.09{col 48}{space 3}0.036{col 56}{space 4}  .000202{col 69}{space 3}  .006204
+{txt}{space 14} {c |}
+{space 9}_cons {c |}{col 16}{res}{space 2} 5.949455{col 28}{space 2} .2408264{col 39}{space 1}   24.70{col 48}{space 3}0.000{col 56}{space 4} 5.476829{col 69}{space 3}  6.42208
+{txt}{hline 15}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. regress lwage c.educ##c.exper
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       935
+{txt}{hline 13}{c +}{hline 34}   F(3, 931)       = {res}    48.41
+{txt}       Model {c |} {res} 22.3529774         3  7.45099246   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 143.303317       931  .153924078   {txt}R-squared       ={res}    0.1349
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.1321
+{txt}       Total {c |} {res} 165.656294       934  .177362199   {txt}Root MSE        =   {res} .39233
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       lwage{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}educ {c |}{col 14}{res}{space 2} .0440498{col 26}{space 2} .0173911{col 37}{space 1}    2.53{col 46}{space 3}0.011{col 54}{space 4} .0099195{col 67}{space 3} .0781801
+{txt}{space 7}exper {c |}{col 14}{res}{space 2}-.0214959{col 26}{space 2} .0199783{col 37}{space 1}   -1.08{col 46}{space 3}0.282{col 54}{space 4}-.0607036{col 67}{space 3} .0177118
+{txt}{space 12} {c |}
+{space 6}c.educ#{c |}
+{space 5}c.exper {c |}{col 14}{res}{space 2}  .003203{col 26}{space 2} .0015292{col 37}{space 1}    2.09{col 46}{space 3}0.036{col 54}{space 4}  .000202{col 67}{space 3}  .006204
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2} 5.949455{col 26}{space 2} .2408264{col 37}{space 1}   24.70{col 46}{space 3}0.000{col 54}{space 4} 5.476829{col 67}{space 3}  6.42208
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. 
+. test c.educ#c.exper = 0
+
+{p 0 7}{space 1}{text:( 1)}{space 1} {res}c.educ#c.exper = 0{p_end}
+
+{txt}       F(  1,   931) ={res}    4.39
+{txt}{col 13}Prob > F ={res}    0.0365
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\s4945697\Documents\tutorial-2.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 4 Aug 2026, 09:37:03
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
