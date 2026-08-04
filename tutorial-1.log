@@ -1,0 +1,125 @@
+--------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\s4945697\Documents\tutorial-1.log
+  log type:  text
+ opened on:   4 Aug 2026, 09:59:13
+
+. ## Problem 2:
+Unknown #command
+
+. describe
+
+Contains data
+ Observations:             0                  
+    Variables:             0                  
+Sorted by: 
+
+. use "C:\Users\s4945697\Downloads\wage3.dta"
+
+. describe
+
+Contains data from C:\Users\s4945697\Downloads\wage3.dta
+ Observations:           935                  
+    Variables:            17                  12 Jun 2024 15:39
+----------------------------------------------------------------------------
+Variable      Storage   Display    Value
+    name         type    format    label      Variable label
+----------------------------------------------------------------------------
+wage            float   %9.0g                 
+hours           float   %9.0g                 
+IQ              float   %9.0g                 
+KWW             float   %9.0g                 
+educ            float   %9.0g                 
+exper           float   %9.0g                 
+tenure          float   %9.0g                 
+age             float   %9.0g                 
+married         float   %9.0g                 
+black           float   %9.0g                 
+south           float   %9.0g                 
+urban           float   %9.0g                 
+sibs            float   %9.0g                 
+brthord         float   %9.0g                 
+meduc           float   %9.0g                 
+feduc           float   %9.0g                 
+lwage           float   %9.0g                 
+----------------------------------------------------------------------------
+Sorted by: 
+
+. help describe
+
+. help tab
+
+. tab educ
+
+       educ |      Freq.     Percent    
+>     Cum.
+------------+---------------------------
+> --------
+         -2 |        103       11.02    
+>    11.02
+          9 |          9        0.96    
+>    11.98
+         10 |         31        3.32    
+>    15.29
+         11 |         38        4.06    
+>    19.36
+         12 |        351       37.54    
+>    56.90
+         13 |         75        8.02    
+>    64.92
+         14 |         71        7.59    
+>    72.51
+         15 |         40        4.28    
+>    76.79
+         16 |        131       14.01    
+>    90.80
+         17 |         36        3.85    
+>    94.65
+         18 |         50        5.35    
+>   100.00
+------------+---------------------------
+> --------
+      Total |        935      100.00
+
+. recode -2 = .
+- invalid name
+r(198);
+
+. help recode
+
+. recode educ -2 = .
+(103 changes made to educ)
+
+. tab educ
+
+       educ |      Freq.     Percent    
+>     Cum.
+------------+---------------------------
+> --------
+          9 |          9        1.08    
+>     1.08
+         10 |         31        3.73    
+>     4.81
+         11 |         38        4.57    
+>     9.38
+         12 |        351       42.19    
+>    51.56
+         13 |         75        9.01    
+>    60.58
+         14 |         71        8.53    
+>    69.11
+         15 |         40        4.81    
+>    73.92
+         16 |        131       15.75    
+>    89.66
+         17 |         36        4.33    
+>    93.99
+         18 |         50        6.01    
+>   100.00
+------------+---------------------------
+> --------
+      Total |        832      100.00
+
+. help egen
+
+. exit, clear
